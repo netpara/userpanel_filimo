@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fa" data-theme="light" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title> 2 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap-rtl.min.css" rel="stylesheet">
+    <link href="css/icon-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="main-section position-relative pb-4">
+
+        <!-- Topbar -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="topbar">
+                        <div class="topbar-right">
+                            <strong class="text-user-profile font-14">خوش آمدید، پرستو کاچکولی </strong>
+                        </div>
+                        <div class="topbar-left">
+                            <button class="btn btn-theme btn-sm btn-outline-secondary" onclick="toggleTheme()">
+                                <i class="bi bi-moon-fill" id="themeIcon"></i>
+                            </button>
+
+                            <a href="#" class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-bell-fill"></i>
+                            </a>
+
+                            <a href="#" class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-house-door-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Overlay -->
+
+        <!-- Start Body User Panel -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="body-user-panel pt-5 d-flex flex-column align-items-center">
+
+                        <!-- Start Sidebar -->
+                        <div class="sidebar rounded-5 w-100 d-flex" id="sidebar">
+                            <a href="Dashboard.html" class="d-flex align-items-center">
+                                <i class="bi bi-house me-2"></i>
+                                داشبورد
+                            </a>
+                            <a href="Myorder.html" class="d-flex align-items-center">
+                                <i class="bi bi-journal-check me-2"></i>
+                                پرداخت ها
+                            </a>
+                            <a href="Accountselection.html" class="d-flex align-items-center">
+                                <i class="bi bi-emoji-wink me-2"></i>
+                                قفل کودک
+                            </a>
+                            <a href="#" class="exit-the-panel d-flex align-items-center">
+                                <i class="bi bi-box-arrow-right text-danger me-2"></i>
+                                خروج
+                            </a>
+                        </div>
+                        <!-- End Sidebar -->
+
+                        <!-- Start Content -->
+                        <div class="content rounded-5 w-100">
+                            <form class="account-first-stege d-flex flex-column align-items-center">
+
+                                <p class="title d-flex justify-content-center py-5 font-18">
+                                    ویرایش
+                                </p>
+
+                                <div class="create-new-account d-flex">
+
+                                    <div class="select-image-box pe-5">
+
+                                        <div class="filled-information-item rounded-15 text-center">
+                                            <span class="font-15 d-block mb-2">وێنە</span>
+                                            <div class="img-box" id="profileImage">
+                                                <img src="/Uploads/f22839f1-c297-448f-8aba-265fd077553a.png"
+                                                    class="rounded-circle" style="width:100px; cursor:pointer;">
+                                            </div>
+                                            <input type="hidden" name="ProfilePhoto" id="ProfilePhoto"
+                                                value="/Uploads/f22839f1-c297-448f-8aba-265fd077553a.png">
+                                        </div>
+
+                                        <div id="avatarModal"
+                                            style="display: none; position: fixed; width: 23%; background: rgb(255, 255, 255); padding: 10px; z-index: 1000; border-radius: 10px; max-height: 400px; overflow: auto;">
+                                            <h5 class="text-dark text-center mb-3">وێنەیەک هەڵبژێره</h5>
+                                            <div>
+                                                <div class="d-block mt-3">
+                                                    <h3 class="text-dark">کچانه</h3>
+                                                    <div style="overflow-x: auto; width:100%;">
+                                                        <div class="d-flex" style="width: max-content;">
+                                                            <img src="/Uploads/7cc52f4e-704a-437d-862a-98e6a59986d4.jpg"
+                                                                onclick="selectProfile('/Uploads/7cc52f4e-704a-437d-862a-98e6a59986d4.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/7f05d132-d556-44bb-b5ae-3cf8598c07ba.jpg"
+                                                                onclick="selectProfile('/Uploads/7f05d132-d556-44bb-b5ae-3cf8598c07ba.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/9443d5fb-9ab6-4ac0-96d1-3f78b8b25d03.jpg"
+                                                                onclick="selectProfile('/Uploads/9443d5fb-9ab6-4ac0-96d1-3f78b8b25d03.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/1294efd3-b29c-4c83-9229-b94778d156f8.jpg"
+                                                                onclick="selectProfile('/Uploads/1294efd3-b29c-4c83-9229-b94778d156f8.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/ad658d09-601c-4277-998e-5d13149c2534.webp"
+                                                                onclick="selectProfile('/Uploads/ad658d09-601c-4277-998e-5d13149c2534.webp')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/574322d9-a46e-4fdf-b509-0431766bbdc5.jpg"
+                                                                onclick="selectProfile('/Uploads/574322d9-a46e-4fdf-b509-0431766bbdc5.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/53624cd1-1c28-498a-a28b-384e83363735.jpg"
+                                                                onclick="selectProfile('/Uploads/53624cd1-1c28-498a-a28b-384e83363735.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/647bc50d-c188-4375-8a55-9cbae5501297.webp"
+                                                                onclick="selectProfile('/Uploads/647bc50d-c188-4375-8a55-9cbae5501297.webp')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/da4571a5-3ba0-47bc-904a-bd6d3132652c.jpg"
+                                                                onclick="selectProfile('/Uploads/da4571a5-3ba0-47bc-904a-bd6d3132652c.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/8d386869-cc7f-43eb-873f-3ca3a87cf347.webp"
+                                                                onclick="selectProfile('/Uploads/8d386869-cc7f-43eb-873f-3ca3a87cf347.webp')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/fb1808c5-0df2-42bc-b227-622b4790fab7.jpg"
+                                                                onclick="selectProfile('/Uploads/fb1808c5-0df2-42bc-b227-622b4790fab7.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/5a64fb30-7474-44f4-86a9-ba2ac8848deb.jpg"
+                                                                onclick="selectProfile('/Uploads/5a64fb30-7474-44f4-86a9-ba2ac8848deb.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/269450cf-cb1e-4ea6-bded-b8f34ff4d6c0.jpg"
+                                                                onclick="selectProfile('/Uploads/269450cf-cb1e-4ea6-bded-b8f34ff4d6c0.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/5dc666dd-18fb-4006-afcc-429eb79cd219.jpg"
+                                                                onclick="selectProfile('/Uploads/5dc666dd-18fb-4006-afcc-429eb79cd219.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/f898761d-6c6d-413e-948d-70119ebd9826.jpg"
+                                                                onclick="selectProfile('/Uploads/f898761d-6c6d-413e-948d-70119ebd9826.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/c641c0c1-2536-4c15-9e97-e7f69fd919f1.jpg"
+                                                                onclick="selectProfile('/Uploads/c641c0c1-2536-4c15-9e97-e7f69fd919f1.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-block mt-3">
+                                                    <h3 class="text-dark">کوڕانه</h3>
+                                                    <div style="overflow-x: auto; width:100%;">
+                                                        <div class="d-flex" style="width: max-content;">
+                                                            <img src="/Uploads/f22839f1-c297-448f-8aba-265fd077553a.png"
+                                                                onclick="selectProfile('/Uploads/f22839f1-c297-448f-8aba-265fd077553a.png')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/107c74ed-441b-46e5-b1ee-5e04857675a6.png"
+                                                                onclick="selectProfile('/Uploads/107c74ed-441b-46e5-b1ee-5e04857675a6.png')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/500406b5-c333-4cde-a429-c6841ae405e0.jpg"
+                                                                onclick="selectProfile('/Uploads/500406b5-c333-4cde-a429-c6841ae405e0.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/ebc1da59-cf12-46e0-ace2-747e71dc2e50.jpg"
+                                                                onclick="selectProfile('/Uploads/ebc1da59-cf12-46e0-ace2-747e71dc2e50.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/a1adba9c-c89d-467d-b12e-9659d415c558.jpg"
+                                                                onclick="selectProfile('/Uploads/a1adba9c-c89d-467d-b12e-9659d415c558.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/b1ba0f47-55bf-4e2d-94e5-ccde2dfc45a8.jpg"
+                                                                onclick="selectProfile('/Uploads/b1ba0f47-55bf-4e2d-94e5-ccde2dfc45a8.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/05ed467c-b60c-4779-a21f-db22ffa7380e.jpg"
+                                                                onclick="selectProfile('/Uploads/05ed467c-b60c-4779-a21f-db22ffa7380e.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/808beac7-bf42-474c-867c-89b39c9ee666.jpg"
+                                                                onclick="selectProfile('/Uploads/808beac7-bf42-474c-867c-89b39c9ee666.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/bade91cb-7713-4585-8eae-0ebc7129706e.jpg"
+                                                                onclick="selectProfile('/Uploads/bade91cb-7713-4585-8eae-0ebc7129706e.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/c2d4bf05-f51f-49d7-ad81-80a8ebef044e.webp"
+                                                                onclick="selectProfile('/Uploads/c2d4bf05-f51f-49d7-ad81-80a8ebef044e.webp')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/0c5d4e4e-8091-46f6-8584-9706da19479a.jpg"
+                                                                onclick="selectProfile('/Uploads/0c5d4e4e-8091-46f6-8584-9706da19479a.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-block mt-3">
+                                                    <h3 class="text-dark">Inside Out</h3>
+                                                    <div style="overflow-x: auto; width:100%;">
+                                                        <div class="d-flex" style="width: max-content;">
+                                                            <img src="/Uploads/2839aa43-eb15-4d56-8229-87710dc1efe3.jpg"
+                                                                onclick="selectProfile('/Uploads/2839aa43-eb15-4d56-8229-87710dc1efe3.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/8dc52829-a406-4843-8518-1361885acc12.jpg"
+                                                                onclick="selectProfile('/Uploads/8dc52829-a406-4843-8518-1361885acc12.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/ed8ace6f-ea0b-4b84-9693-21f3be76de41.jpg"
+                                                                onclick="selectProfile('/Uploads/ed8ace6f-ea0b-4b84-9693-21f3be76de41.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/4de0a9cc-56e9-4b2a-81d1-826fc8f4428a.jpg"
+                                                                onclick="selectProfile('/Uploads/4de0a9cc-56e9-4b2a-81d1-826fc8f4428a.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/ca62a522-824d-48fb-aac4-c91608ac5ddd.jpg"
+                                                                onclick="selectProfile('/Uploads/ca62a522-824d-48fb-aac4-c91608ac5ddd.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/f7eb7e88-3e3b-4318-b805-108f741098c3.jpg"
+                                                                onclick="selectProfile('/Uploads/f7eb7e88-3e3b-4318-b805-108f741098c3.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/0b881515-d45f-451b-9a53-6332184d1449.jpg"
+                                                                onclick="selectProfile('/Uploads/0b881515-d45f-451b-9a53-6332184d1449.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/979825b1-ffbc-47ae-b3e5-eca375eda8ea.jpg"
+                                                                onclick="selectProfile('/Uploads/979825b1-ffbc-47ae-b3e5-eca375eda8ea.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/31435dc9-460b-447c-92b7-fd0792098ace.jpg"
+                                                                onclick="selectProfile('/Uploads/31435dc9-460b-447c-92b7-fd0792098ace.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                            <img src="/Uploads/d19137a5-4465-42c9-b960-63400a36ee8c.jpg"
+                                                                onclick="selectProfile('/Uploads/d19137a5-4465-42c9-b960-63400a36ee8c.jpg')"
+                                                                style="width:70px; margin:5px; cursor:pointer; border-radius:50%; border:2px solid transparent;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#"
+                                                onclick="document.getElementById('avatarModal').style.display='none'"
+                                                style="position: absolute; top: 0; left: 10px"
+                                                class="btn btn-danger mt-3">X</a>
+                                        </div>
+
+                                        <p class="mt-4 font-13">
+                                            انتخاب عکس
+                                        </p>
+
+                                    </div>
+
+                                    <div class="filled-information">
+                                        <div class="filled-information-item d-flex flex-column mb-4">
+                                            <span class="font-13 mb-2">ناو :</span>
+                                            <input class="ps-3" id="FirstName" name="FirstName" type="text"
+                                                value="شهرام">
+                                        </div>
+                                        <div class="filled-information-item d-flex flex-column mb-4">
+                                            <span class="font-13 mb-2">انتخاب رده سنی :</span>
+                                            <select name="" id="">
+                                                <option value="">0 تا 6 سال</option>
+                                                <option value="">6 تا 12</option>
+                                                <option value="">بزرگسال</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="btn-box d-flex align-items-center justify-content-end mb-4">
+                                            <i class="bi bi-trash text-danger btn-remove">
+                                                <span class="font-12">حذف کاربر</span>
+                                            </i>
+                                            <a href="Accountselection_1.html"
+                                                class="btn-cancel bg-danger d-flex justify-content-center align-items-center">بازگشت</a>
+                                            <button
+                                                class="btn-add d-flex justify-content-center align-items-center">ذخیره</button>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                        <!-- End Content -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Body User Panel -->
+
+    </section>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

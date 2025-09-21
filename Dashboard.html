@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fa" data-theme="light" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title> داشبورد </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap-rtl.min.css" rel="stylesheet">
+  <link href="css/icon-bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <section class="main-section position-relative pb-4">
+
+    <!-- Topbar -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="topbar">
+            <div class="topbar-right">
+              <strong class="text-user-profile font-14">خوش آمدید، پرستو کاچکولی </strong>
+            </div>
+            <div class="topbar-left">
+              <button class="btn btn-theme btn-sm btn-outline-secondary" onclick="toggleTheme()">
+                <i class="bi bi-moon-fill" id="themeIcon"></i>
+              </button>
+
+              <a href="#" class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-bell-fill"></i>
+              </a>
+
+              <a href="#" class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-house-door-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Overlay -->
+
+    <!-- Start Body User Panel -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="body-user-panel pt-5 d-flex flex-column align-items-center">
+
+            <!-- Start Sidebar -->
+            <div class="sidebar rounded-5 w-100 d-flex" id="sidebar">
+              <a href="Dashboard.html" class="d-flex align-items-center">
+                <i class="bi bi-house me-2"></i>
+                داشبورد
+              </a>
+              <a href="Myorder.html" class="d-flex align-items-center">
+                <i class="bi bi-journal-check me-2"></i>
+                پرداخت ها
+              </a>
+              <a href="Accountselection.html" class="d-flex align-items-center">
+                <i class="bi bi-emoji-wink me-2"></i>
+                قفل کودک
+              </a>
+              <a href="#" class="exit-the-panel d-flex align-items-center">
+                <i class="bi bi-box-arrow-right text-danger me-2"></i>
+                خروج
+              </a>
+            </div>
+            <!-- End Sidebar -->
+
+            <!-- Start Content -->
+            <div class="content rounded-5 w-100">
+              <div class="section-user-counter">
+
+                <!-- Start Subscription Statusc Box  -->
+                <div
+                  class="subscription-status-box p-5 rounded-5 d-flex align-items-center w-100 justify-content-between">
+                  <div class="d-flex flex-column">
+                    <div class="mb-4">
+                      <span class="font-15">وضعیت اشتراک</span>
+                    </div>
+                    <div>
+                      <span class="text-danger font-14">
+                        شما اشتراک ندارید
+                      </span>
+                      <span class="text-danger font-14">
+                        اشتراک شما به پایین رسیده
+                      </span>
+                      <span class="text-success font-14">
+                        11 روز اشتراک مانده
+                      </span>
+                    </div>
+                  </div>
+                  <a class="d-flex  font-14" href="#">
+                    <span>کڕینی ئیشتڕاک</span>
+                  </a>
+                </div>
+                <!-- End Subscription Statusc Box  -->
+
+                <!-- Start Form Box  -->
+                <div class="form-box rounded-5 mt-4 p-5">
+                  <form action="#">
+
+                    <!-- Start User -->
+                    <div class="input-item mb-5">
+                      <div class="label-box">
+                        <label for="#" class="font-14 me-1">نام</label>
+                        <a href="#" type="button" class="edit_input font-12" data-bs-toggle="modal"
+                          data-bs-target="#changeuser_Modal">ویرایش نام
+                        </a>
+                      </div>
+                      <input type="text" placeholder="user_1" class="p-3">
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="changeuser_Modal" tabindex="-1"
+                        aria-labelledby="changeuser_ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header d-flex align-items-center">
+                              <h1 class="modal-title fs-5" id="changeuser_ModalLabel"> تغییر نام کاربردی</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="bi-x-lg"></i>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <input type="text" placeholder="نام کاربری جدید" class="p-3">
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+                              <button type="button" class="btn btn-primary"> ذخیره</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End User -->
+
+                    <!-- Start Number -->
+                    <div class="input-item mb-5">
+                      <div class="label-box">
+                        <label for="#" class="font-14 me-1">شماره تلفن</label>
+                        <a href="#" type="button" class="edit_input font-12" data-bs-toggle="modal"
+                          data-bs-target="#changenumber_Modal">ویرایش شماره تلفن
+                        </a>
+                      </div>
+                      <input type="text" placeholder="0914***1212" class="p-3">
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="changenumber_Modal" tabindex="-1"
+                        aria-labelledby="changenumber_ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="changenumber_ModalLabel"> تغییر شماره کاربر</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="bi-x-lg"></i>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <input type="text" placeholder="0914***1323" class="p-3">
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+                              <button type="button" class="btn btn-primary"> ذخیره</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Number -->
+
+                    <!-- Start Email -->
+                    <div class="input-item mb-5">
+                      <div class="label-box">
+                        <label for="#" class="font-14 me-1">ایمیل </label>
+                        <a href="#" type="button" class="edit_input font-12" data-bs-toggle="modal"
+                          data-bs-target="#change_email_Modal">ویرایش ایمیل
+                        </a>
+                      </div>
+                      <input type="text" placeholder="هنوز ایمیلی ثبت نکردید" class="p-3">
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="change_email_Modal" tabindex="-1"
+                        aria-labelledby="change_email_ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="change_email_ModalLabel"> تغییر ایمیل </h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="bi-x-lg"></i>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <input type="text" placeholder=" ایمیل" class="p-3">
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+                              <button type="button" class="btn btn-primary"> ذخیره</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Email -->
+
+                    <!-- Start Password -->
+                    <div class="input-item mb-5">
+                      <div class="label-box">
+                        <label for="#" class="font-14 me-1">رمز عبور </label>
+                        <a href="#" type="button" class="edit_input font-12" data-bs-toggle="modal"
+                          data-bs-target="#change_password_Modal">ویرایش رمز عبور
+                        </a>
+                      </div>
+                      <input type="password" placeholder="رمز عبور" class="p-3">
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="change_password_Modal" tabindex="-1"
+                        aria-labelledby="change_password_ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="change_password_ModalLabel"> تغییر رمز عبور </h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="bi-x-lg"></i>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <input type="text" placeholder=" رمز عبور جدید" class="p-3">
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+                              <button type="button" class="btn btn-primary"> ذخیره</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Password -->
+
+                  </form>
+                </div>
+                <!-- End Form Box  -->
+
+                <!-- Start Disable User Account -->
+                <div class="disable-user-account rounded-5 mt-4 p-5 d-flex justify-content-between">
+                  <p class="font-13">برای غیر فعال کردن حساب کاربری خود می توانید روی دکمه مقابل کلیک کنید.</p>
+                  <a href="#" class="text-danger font-13">غیرفعال کردن حساب کاربری</a>
+                </div>
+                <!-- End Disable User Account -->
+
+              </div>
+            </div>
+            <!-- End Content -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Body User Panel -->
+
+  </section>
+
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

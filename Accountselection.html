@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fa" data-theme="light" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title> داشبورد </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap-rtl.min.css" rel="stylesheet">
+    <link href="css/icon-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="main-section position-relative pb-4">
+
+        <!-- Topbar -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="topbar">
+                        <div class="topbar-right">
+                            <strong class="text-user-profile font-14">خوش آمدید، پرستو کاچکولی </strong>
+                        </div>
+                        <div class="topbar-left">
+                            <button class="btn btn-theme btn-sm btn-outline-secondary" onclick="toggleTheme()">
+                                <i class="bi bi-moon-fill" id="themeIcon"></i>
+                            </button>
+
+                            <a href="#" class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-bell-fill"></i>
+                            </a>
+
+                            <a href="#" class="btn btn-sm btn-outline-secondary">
+                                <i class="bi bi-house-door-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Overlay -->
+
+        <!-- Start Body User Panel -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="body-user-panel pt-5 d-flex flex-column align-items-center">
+
+                        <!-- Start Sidebar -->
+                        <div class="sidebar rounded-5 w-100 d-flex" id="sidebar">
+                            <a href="Dashboard.html" class="d-flex align-items-center">
+                                <i class="bi bi-house me-2"></i>
+                                داشبورد
+                            </a>
+                            <a href="Myorder.html" class="d-flex align-items-center">
+                                <i class="bi bi-journal-check me-2"></i>
+                                پرداخت ها
+                            </a>
+                            <a href="Accountselection.html" class="d-flex align-items-center">
+                                <i class="bi bi-emoji-wink me-2"></i>
+                                قفل کودک
+                            </a>
+                            <a href="#" class="exit-the-panel d-flex align-items-center">
+                                <i class="bi bi-box-arrow-right text-danger me-2"></i>
+                                خروج
+                            </a>
+                        </div>
+                        <!-- End Sidebar -->
+
+                        <!-- Start Content -->
+                        <div class="content rounded-5 w-100">
+                            <div class="section-account-selection d-flex">
+                                <div class="description-right d-flex flex-column justify-content-between w-50 pe-4">
+                                    <div class="">
+                                        <p class="title font-17 font-weight-bold mb-4">ساخت یک عضو برای تماشای کودک</p>
+                                        <p class="font-14">
+                                            شما این امکان را دارید تا در تمام دستگاه هایی که روی آن فیلیمو تماشا می
+                                            کنید، به
+                                            غیر از اعضای دیگر یک عضو مخصوص تماشای کودک اضافه کنید تا فقط محتوای مناسب سن
+                                            خود
+                                            را ببیند. کافی ست روی دکمه زیر بزنید.
+                                        </p>
+                                    </div>
+                                    <a href="Accountselection_1.html"
+                                        class="btn-add mt-4 p-3 font-14 rounded-5 text-white d-flex justify-content-center align-items-center">
+                                        <i class="bi bi-plus-circle me-2"></i>
+                                        ساخت عضو برای تماشای کودک
+                                    </a>
+                                </div>
+                                <div class="image-left ms-5 w-50">
+                                    <div class="image-box d-flex justify-content-end w-100">
+                                        <img src="img/image_selection.png" alt="" class="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Content -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Body User Panel -->
+
+    </section>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
